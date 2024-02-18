@@ -1,0 +1,16 @@
+PODS:
+  - HHUtils (0.1.0)
+
+DEPENDENCIES:
+  - HHUtils (from `../`)
+
+EXTERNAL SOURCES:
+  HHUtils:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HHUtils: f52cf798600ce62182260ea3645100c8a5e14192
+
+PODFILE CHECKSUM: c26bbf18cd2b17dbc754e3c0c82c7523564803ca
+
+COCOAPODS: 1.14.2
