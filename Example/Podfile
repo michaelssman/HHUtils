@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '10.0'
+
+target 'HHUtils_Example' do
+  pod 'HHUtils', :path => '../'
+
+  target 'HHUtils_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
