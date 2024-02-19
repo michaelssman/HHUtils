@@ -9,8 +9,8 @@ import UIKit
 import Foundation
 
 public class HHButton: UIButton {
-    @objc var titleRect: CGRect = CGRect.zero
-    @objc var imageRect: CGRect = CGRect.zero
+    @objc public var titleRect: CGRect = CGRect.zero
+    @objc public var imageRect: CGRect = CGRect.zero
     /// 文字宽度
     @objc var titleWidth: CGFloat = 0.0
     @objc var space: CGFloat = 0.0
