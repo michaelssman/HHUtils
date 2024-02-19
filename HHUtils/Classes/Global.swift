@@ -10,13 +10,13 @@
 import Foundation
 import UIKit
 
-let SCREEN_WIDTH = UIScreen.main.bounds.width
-let SCREEN_HEIGHT = UIScreen.main.bounds.height
+public let SCREEN_WIDTH = UIScreen.main.bounds.width
+public let SCREEN_HEIGHT = UIScreen.main.bounds.height
 
 
 // MARK: keyWindow
 @inline(__always)
-func keyWindow() -> UIWindow {
+public func keyWindow() -> UIWindow {
     var result: UIWindow = UIWindow()
     if #available(iOS 13.0, *) {
         let scenes: Set = UIApplication.shared.connectedScenes
