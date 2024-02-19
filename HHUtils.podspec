@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HHUtils'
-  s.version          = '0.1.0'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of HHUtils.'
 
 # This description is used to generate tags and improve search results.
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'HHUtils/Classes/**/*'
+  s.source_files = 'HHUtils/Classes/**/*.{h,m,swift}'
   
   # s.resource_bundles = {
   #   'HHUtils' => ['HHUtils/Assets/*.png']
