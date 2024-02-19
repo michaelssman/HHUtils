@@ -13,7 +13,7 @@ extension UIResponder {
     static weak var hh_currentFirstResponder: UIResponder?
     
     // 输入文本的方法
-    @objc static func inputText(_ text: String) {
+    @objc static public func inputText(_ text: String) {
         // 尝试获取当前第一响应者，并且它遵守 UITextInput 协议
         if let textInput = firstResponderTextView as? UITextInput {
             let character = String(text)
@@ -44,7 +44,7 @@ extension UIResponder {
     }
     
     // 删除文本的方法
-    @objc static func hh_deleteBackward() {
+    @objc static public func hh_deleteBackward() {
         // 尝试获取当前第一响应者，并且它遵守 UITextInput 协议
         if let textInput = firstResponderTextView as? UITextInput {
             textInput.deleteBackward()
@@ -52,7 +52,7 @@ extension UIResponder {
     }
     
     // 获取当前第一响应者视图的方法
-    static var firstResponderTextView: UIView? {
+    public static var firstResponderTextView: UIView? {
         /**
          `- (BOOL)sendAction:(SEL)action to:(nullable id)target from:(nullable id)sender forEvent:(nullable UIEvent *)event;`
          

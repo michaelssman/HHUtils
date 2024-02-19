@@ -22,7 +22,7 @@ extension UIViewController {
         }
     }
     // MARK: 回收键盘
-    @objc func addDismissKeyboard() {
+    @objc public func addDismissKeyboard() {
         let nc = NotificationCenter.default
         let singleTapGR = UITapGestureRecognizer(target: self, action: #selector(tapAnywhereToDismissKeyboard(_:)))
         let panGR = UIPanGestureRecognizer(target: self, action: #selector(tapAnywhereToDismissKeyboard(_:)))
@@ -44,7 +44,7 @@ extension UIViewController {
         view.endEditing(true)
     }
     /// 移除观察者，需要手动调用
-    @objc func removeDismissKeyboard() {
+    @objc public func removeDismissKeyboard() {
         let nc = NotificationCenter.default
         nc.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
         nc.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
