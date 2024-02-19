@@ -15,10 +15,10 @@ private var leftNameKey: Void?
 extension UIButton {
     
     // MARK: 扩大响应范围
-    func setEnlargeEdge(size: Float) {
+    public func setEnlargeEdge(size: Float) {
         setEnlargeEdge(top: size, right: size, bottom: size, left: size)
     }
-    func setEnlargeEdge(top: Float, right: Float, bottom: Float, left: Float) {
+    public func setEnlargeEdge(top: Float, right: Float, bottom: Float, left: Float) {
         objc_setAssociatedObject(self, &topNameKey, NSNumber(value: top), .OBJC_ASSOCIATION_COPY_NONATOMIC)
         objc_setAssociatedObject(self, &rightNameKey, NSNumber(value: right), .OBJC_ASSOCIATION_COPY_NONATOMIC)
         objc_setAssociatedObject(self, &bottomNameKey, NSNumber(value: bottom), .OBJC_ASSOCIATION_COPY_NONATOMIC)

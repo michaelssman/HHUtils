@@ -8,21 +8,21 @@
 import UIKit
 import Foundation
 
-class HHButton: UIButton {
+public class HHButton: UIButton {
     @objc var titleRect: CGRect = CGRect.zero
     @objc var imageRect: CGRect = CGRect.zero
     /// 文字宽度
     @objc var titleWidth: CGFloat = 0.0
     @objc var space: CGFloat = 0.0
     
-    override func titleRect(forContentRect contentRect: CGRect) -> CGRect {
+    public override func titleRect(forContentRect contentRect: CGRect) -> CGRect {
         if !titleRect.isEmpty && titleRect != CGRect.zero {
             return titleRect
         }
         return super.titleRect(forContentRect: contentRect)
     }
     
-    override func imageRect(forContentRect contentRect: CGRect) -> CGRect {
+    public override func imageRect(forContentRect contentRect: CGRect) -> CGRect {
         if !imageRect.isEmpty && imageRect != CGRect.zero {
             return imageRect
         }
@@ -38,7 +38,7 @@ class HHButton: UIButton {
         }
     }
     
-    override func setTitle(_ title: String?, for state: UIControl.State) {
+    public override func setTitle(_ title: String?, for state: UIControl.State) {
         super.setTitle(title, for: state)
         var titleRect = self.titleRect
         var imageRect = self.imageRect

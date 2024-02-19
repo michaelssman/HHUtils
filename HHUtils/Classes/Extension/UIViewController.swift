@@ -17,7 +17,7 @@ extension UIViewController {
         present(alertVC, animated: true, completion: nil)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.2) {
             alertVC.dismiss(animated: true) {
-                self.navigationController?.pushViewController(HomeViewController(), animated: true)
+//                self.navigationController?.pushViewController(HomeViewController(), animated: true)
             }
         }
     }
@@ -31,10 +31,10 @@ extension UIViewController {
         tapV.addGestureRecognizer(panGR)
         weak var weakSelf = self
         let mainQuene = OperationQueue.main
-        nc.addObserver(forName: UIResponder.keyboardWillShowNotification, object: nil, queue: mainQuene) { (note) in
+        nc.addObserver(forName: NSNotification.Name.UIKeyboardWillShow, object: nil, queue: mainQuene) { (note) in
             weakSelf?.view.addSubview(tapV)
         }
-        nc.addObserver(forName: UIResponder.keyboardWillHideNotification, object: nil, queue: mainQuene) { (note) in
+        nc.addObserver(forName: NSNotification.Name.UIKeyboardWillHide, object: nil, queue: mainQuene) { (note) in
             tapV.removeFromSuperview()
         }
     }
@@ -46,8 +46,8 @@ extension UIViewController {
     /// 移除观察者，需要手动调用
     @objc func removeDismissKeyboard() {
         let nc = NotificationCenter.default
-        nc.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
-        nc.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+        nc.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        nc.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     // MARK: 键盘遮挡输入框问题
     //键盘高度
@@ -69,17 +69,17 @@ extension UIViewController {
     }
     //添加观察者  在viewDidLoad中调用
     @objc func addResizeForKeyboardObserver() {
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
     @objc func keyboardWillShow(_ note: Notification) {
         guard let info = note.userInfo,
-              let keyboardSize = info[UIResponder.keyboardFrameEndUserInfoKey] as? CGRect else {
+              let keyboardSize = info[UIKeyboardFrameEndUserInfoKey] as? CGRect else {
             return
         }
         keyboardHeight = keyboardSize.height
-        keyboardAnimationDuration = info[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval ?? 0.5
+        keyboardAnimationDuration = info[UIKeyboardAnimationDurationUserInfoKey] as? TimeInterval ?? 0.5
         updateViewFrame()
         print("keyboardWillShow")
     }
@@ -87,7 +87,7 @@ extension UIViewController {
     //更新frame，防止键盘遮挡输入框
     @objc func updateViewFrame() {
         //转变firstResponderView相对于window屏幕的坐标，必须得是从firstResponderView的superview转。
-        let firstResponderView: UIView = UIResponder.hh_currentFirst() as! UIView
+        let firstResponderView: UIView = UIResponder.firstResponderTextView!
         let frame: CGRect = firstResponderView.superview!.convert(firstResponderView.frame, to: keyWindow())
         
         let offset = frame.maxY - (UIScreen.main.bounds.size.height - keyboardHeight)
@@ -101,7 +101,7 @@ extension UIViewController {
     
     @objc func keyboardWillHide(_ note: Notification) {
         guard let info = note.userInfo,
-              let animationDuration = info[UIResponder.keyboardAnimationDurationUserInfoKey] as? TimeInterval else {
+              let animationDuration = info[UIKeyboardAnimationDurationUserInfoKey] as? TimeInterval else {
             return
         }
         UIView.animate(withDuration: animationDuration) { [self] in
@@ -111,15 +111,15 @@ extension UIViewController {
         print("keyboardWillHide")
     }
     //移除观察者 防止内存泄漏   在viewWillDisappear中调用
-    @objc func removeResizeForKeyboardObserver() {
-        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
-        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    @objc public func removeResizeForKeyboardObserver() {
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillShow, object: nil)
+        NotificationCenter.default.removeObserver(self, name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
     // MARK: topViewController
     //里面用到递归
     //    keyWindow().rootViewController!
-    var topViewController: UIViewController? {
+    public var topViewController: UIViewController? {
         if let navigationController = self as? UINavigationController {
             return navigationController.visibleViewController?.topViewController
         } else if let tabBarController = self as? UITabBarController {

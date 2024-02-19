@@ -7,31 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		286EE2D82292145D153CA53A36EEC0FC /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024349BC868EDC040B50E978185361BE /* UIViewController.swift */; };
+		290B2EB9A1A75EAF0A3B0D0D98AFCC42 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC50E75CA933F0D1339A89AE30D8F029 /* Global.swift */; };
 		3745846A063FFD72FF9F2573DA5521CE /* Pods-HHUtils_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C954DEB60B4B58FA34168FEC5D261EF /* Pods-HHUtils_Tests-dummy.m */; };
-		6353D9B3129D72681FBFD52938223837 /* HHUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E5D560281BA20963167F019F22F58606 /* HHUtils-dummy.m */; };
+		5CFE361C12594B77D4F2A2BCD173309F /* UIResponder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B83844E58E6DD1842CD2E5D72B1DAC /* UIResponder.swift */; };
+		60B99A101CCBF79ACA91349833DD331C /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB9DCD0E77FFF9BADE4AC2C73D2813B6 /* UIButton.swift */; };
+		7E53EFD915E515FA3C8779A402436D41 /* HHUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD99E79177BC54501CD8159F75A1310A /* HHUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8214849AF1C86AD8C0CB8DD78A674E17 /* Pods-HHUtils_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D97137AA53C075B2A6875B352DA1EEE /* Pods-HHUtils_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8B6F4DEC58D5FD10D5A3C6039D25573F /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB94B1AC4965DA3B9D61E41E00B375AC /* UIButton.swift */; };
+		8224D6A685665850ED6F37AA926064DB /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 706E35551DA8EBC2E5FB36DAEBFE8CB3 /* UIDeviceExtension.swift */; };
+		8776005AC9A68A6E747E09E1598D1206 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		989A392153F2F7ABA0876390E118DC76 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D21D5E69C59036743C1A18A2346E57D4 /* UIViewController.swift */; };
 		A0CDC34985B03415EA5BF747EF560E62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A10FCA55556287F3B374792BE7F0E11D /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD1BCB399688A60A417AF454C50DA60 /* Global.swift */; };
+		A7BB4B751375A2A70FBF12DEC93D18E8 /* HHUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 115FE643A31F8557C388BF519C277628 /* HHUtils-dummy.m */; };
 		BCF4CED10096F27B7E8428001BD014CB /* Pods-HHUtils_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41859FD79A198ABAB000ACB3005D6B47 /* Pods-HHUtils_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D1470B770DFB3A8AFCD7F9D0496FD334 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A02A245EB04D10F643ACF826E3823CA8 /* UIDeviceExtension.swift */; };
-		D2AEA773D430CE767A7F30A5B38178D1 /* HHUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A3C60F8B946C199922461DA2D11D03C /* HHUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C637F65AC4BA171ABDE791F2C25E410D /* HHButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 143F96022A44AB8805838D17273B8C21 /* HHButton.swift */; };
 		D90EBC715B838F486FFB216442CF0FFE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 		E4BE00ED89190A3D1F01F90C610946BC /* Pods-HHUtils_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D970F09F95FEC28DEE9F6310EE9097A5 /* Pods-HHUtils_Example-dummy.m */; };
-		F0C331AC729D635EDB1AE453632F358D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		F1A68EFF664BC771E01EBEAC648816DD /* HHButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 361319009B85F288B4F416CA1C65C06D /* HHButton.swift */; };
+		F19C78D6954D60D33005716B0DB5793F /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F678CF70CA137F115A87D69C837EB618 /* String.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		046C7DC2D8D237CE873A14C74D7409CD /* PBXContainerItemProxy */ = {
+		2F306FC0FBAA1EF6B4C5CDBC3F7BC966 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = FFF4F7584BB23B458783EED401B641C0;
 			remoteInfo = HHUtils;
 		};
-		CF6CAE385B49A2EF63648CEDF63C6094 /* PBXContainerItemProxy */ = {
+		4D563F103E0369666121ED9AFDA7255F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -41,46 +43,56 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		024349BC868EDC040B50E978185361BE /* UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		0E384E1CD123270992522967BBEFEC09 /* Pods-HHUtils_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HHUtils_Example-Info.plist"; sourceTree = "<group>"; };
+		115FE643A31F8557C388BF519C277628 /* HHUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HHUtils-dummy.m"; sourceTree = "<group>"; };
 		1408E65F761996EA929DEEC3AE1566CB /* Pods-HHUtils_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHUtils_Example.release.xcconfig"; sourceTree = "<group>"; };
+		143F96022A44AB8805838D17273B8C21 /* HHButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HHButton.swift; sourceTree = "<group>"; };
 		1C9531A4E583940AC9B6C60B6945B42A /* Pods-HHUtils_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-HHUtils_Tests"; path = Pods_HHUtils_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC98305F041BBF47C1E099B4B380248 /* Pods-HHUtils_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHUtils_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1F8B1A74DC273F16B522481242988416 /* Pods-HHUtils_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HHUtils_Tests-Info.plist"; sourceTree = "<group>"; };
+		23F1DF0AFC855AB209FA864DA5E4C3C0 /* HHUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HHUtils-prefix.pch"; sourceTree = "<group>"; };
 		2B962A364A58F778CB822EDA422707E7 /* Pods-HHUtils_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHUtils_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		306C35CE221554890B6A99B771BA2091 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		361319009B85F288B4F416CA1C65C06D /* HHButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HHButton.swift; sourceTree = "<group>"; };
+		34F241597983489A7002FB87DCDA4DDA /* HHUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HHUtils.debug.xcconfig; sourceTree = "<group>"; };
 		41859FD79A198ABAB000ACB3005D6B47 /* Pods-HHUtils_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HHUtils_Tests-umbrella.h"; sourceTree = "<group>"; };
 		441741CB7DB4D92CF81F3F124586849E /* HHUtils */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HHUtils; path = HHUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4793908AA19A5852E162C540AB954648 /* HHUtils-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HHUtils-Info.plist"; sourceTree = "<group>"; };
+		575BABC76CA109CE295D43F97463BAD6 /* HHUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HHUtils.modulemap; sourceTree = "<group>"; };
 		5D97137AA53C075B2A6875B352DA1EEE /* Pods-HHUtils_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HHUtils_Example-umbrella.h"; sourceTree = "<group>"; };
-		6671FB2DA10E6D66D11DFCCF4466C095 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		6F9E94ED174328F200B47A7E0F06200D /* Pods-HHUtils_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HHUtils_Tests.modulemap"; sourceTree = "<group>"; };
+		706E35551DA8EBC2E5FB36DAEBFE8CB3 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		7277C12029E4BEF622D91EACD5D95346 /* Pods-HHUtils_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HHUtils_Example-frameworks.sh"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7A7EBB652974F34F7170CB4A211D4A5A /* Pods-HHUtils_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HHUtils_Example.modulemap"; sourceTree = "<group>"; };
-		7AD1BCB399688A60A417AF454C50DA60 /* Global.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Global.swift; path = HHUtils/Classes/Global.swift; sourceTree = "<group>"; };
 		7C954DEB60B4B58FA34168FEC5D261EF /* Pods-HHUtils_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HHUtils_Tests-dummy.m"; sourceTree = "<group>"; };
-		8A3C60F8B946C199922461DA2D11D03C /* HHUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HHUtils-umbrella.h"; sourceTree = "<group>"; };
-		9B958164D396040A6A8F684BAE3F5C1C /* HHUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HHUtils.debug.xcconfig; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F26852643C120B6754DD3771C67D3DE /* Pods-HHUtils_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HHUtils_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A02A245EB04D10F643ACF826E3823CA8 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		A158860188D34EA583C0EEFCD7CCFAA3 /* Pods-HHUtils_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HHUtils_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A6516E5A52257ADC5E59B89E8EF13E4F /* HHUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HHUtils.release.xcconfig; sourceTree = "<group>"; };
-		B673437FCD908A2F703171698CF6AE22 /* HHUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HHUtils.modulemap; sourceTree = "<group>"; };
-		B93EBC50328E8529DC5C5780492D0650 /* HHUtils.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HHUtils.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		ACB9625ACB706EF4EFA05E212178505D /* HHUtils.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HHUtils.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		AD99E79177BC54501CD8159F75A1310A /* HHUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HHUtils-umbrella.h"; sourceTree = "<group>"; };
+		BB9DCD0E77FFF9BADE4AC2C73D2813B6 /* UIButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		C3B12653F01EF22DEDCB06782272A059 /* Pods-HHUtils_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-HHUtils_Example"; path = Pods_HHUtils_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D21D5E69C59036743C1A18A2346E57D4 /* UIViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
 		D8082A94CBC427E09D5F6A2CB9CAB08E /* Pods-HHUtils_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHUtils_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		D8A3E901A4CC0A6CF58440D6E991BFE9 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		D970F09F95FEC28DEE9F6310EE9097A5 /* Pods-HHUtils_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HHUtils_Example-dummy.m"; sourceTree = "<group>"; };
-		E4D6EF2507DAF6B2A858753B67B2088D /* HHUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HHUtils-prefix.pch"; sourceTree = "<group>"; };
-		E5D560281BA20963167F019F22F58606 /* HHUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HHUtils-dummy.m"; sourceTree = "<group>"; };
 		E90125571F53E00B04F42847291F891E /* Pods-HHUtils_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HHUtils_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		EB94B1AC4965DA3B9D61E41E00B375AC /* UIButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		E9456A71915ED20EE9D02C5771224658 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		E9DFC0041CB96FFA3419B2A447A80BA4 /* HHUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HHUtils.release.xcconfig; sourceTree = "<group>"; };
+		F678CF70CA137F115A87D69C837EB618 /* String.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		F7B83844E58E6DD1842CD2E5D72B1DAC /* UIResponder.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = UIResponder.swift; sourceTree = "<group>"; };
 		FBC51A5A419835BDE308757C107C231A /* Pods-HHUtils_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HHUtils_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		FDD01B77E9452184F03736ECE07BCC8C /* HHUtils-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HHUtils-Info.plist"; sourceTree = "<group>"; };
+		FC50E75CA933F0D1339A89AE30D8F029 /* Global.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Global.swift; path = HHUtils/Classes/Global.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1D406561635889559F2771B25F3C4F8B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8776005AC9A68A6E747E09E1598D1206 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		434280FD238E5DC588F6D03B7817E284 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -97,28 +109,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E2236D3FC9E5C291DE0CE151EC22DA00 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F0C331AC729D635EDB1AE453632F358D /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0BFF09AB95D297266D3746BBCCD4C3C5 /* HHUtils */ = {
+		2B4AB04BEBF54224FCF20D3EE8D528BC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				7AD1BCB399688A60A417AF454C50DA60 /* Global.swift */,
-				96AB47E89B730AE54DC20205AE5780D5 /* Extension */,
-				6026798FF716E2E547C4F01B42E1DCE5 /* Pod */,
-				6A3926BD226ECD7D5C68A9F48F537B52 /* Support Files */,
-				6CFE1F7843285801735CB34D33606B31 /* View */,
+				575BABC76CA109CE295D43F97463BAD6 /* HHUtils.modulemap */,
+				115FE643A31F8557C388BF519C277628 /* HHUtils-dummy.m */,
+				4793908AA19A5852E162C540AB954648 /* HHUtils-Info.plist */,
+				23F1DF0AFC855AB209FA864DA5E4C3C0 /* HHUtils-prefix.pch */,
+				AD99E79177BC54501CD8159F75A1310A /* HHUtils-umbrella.h */,
+				34F241597983489A7002FB87DCDA4DDA /* HHUtils.debug.xcconfig */,
+				E9DFC0041CB96FFA3419B2A447A80BA4 /* HHUtils.release.xcconfig */,
 			);
-			name = HHUtils;
-			path = ../..;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HHUtils";
 			sourceTree = "<group>";
 		};
 		342603DA02BC4FFB43E6A60F49500913 /* Pods-HHUtils_Tests */ = {
@@ -137,46 +143,25 @@
 			path = "Target Support Files/Pods-HHUtils_Tests";
 			sourceTree = "<group>";
 		};
+		427CD671D4E5E9229E8A305AD392C2DC /* HHUtils */ = {
+			isa = PBXGroup;
+			children = (
+				FC50E75CA933F0D1339A89AE30D8F029 /* Global.swift */,
+				9807868BC44E53FF230AA0ED6FEA62D9 /* Extension */,
+				BC30990033330DEFAF329B38016531AC /* Pod */,
+				2B4AB04BEBF54224FCF20D3EE8D528BC /* Support Files */,
+				B04A2FD1DBB7517AB872C32D18459E3A /* View */,
+			);
+			name = HHUtils;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		6026798FF716E2E547C4F01B42E1DCE5 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				B93EBC50328E8529DC5C5780492D0650 /* HHUtils.podspec */,
-				6671FB2DA10E6D66D11DFCCF4466C095 /* LICENSE */,
-				306C35CE221554890B6A99B771BA2091 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		6A3926BD226ECD7D5C68A9F48F537B52 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B673437FCD908A2F703171698CF6AE22 /* HHUtils.modulemap */,
-				E5D560281BA20963167F019F22F58606 /* HHUtils-dummy.m */,
-				FDD01B77E9452184F03736ECE07BCC8C /* HHUtils-Info.plist */,
-				E4D6EF2507DAF6B2A858753B67B2088D /* HHUtils-prefix.pch */,
-				8A3C60F8B946C199922461DA2D11D03C /* HHUtils-umbrella.h */,
-				9B958164D396040A6A8F684BAE3F5C1C /* HHUtils.debug.xcconfig */,
-				A6516E5A52257ADC5E59B89E8EF13E4F /* HHUtils.release.xcconfig */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/HHUtils";
-			sourceTree = "<group>";
-		};
-		6CFE1F7843285801735CB34D33606B31 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				361319009B85F288B4F416CA1C65C06D /* HHButton.swift */,
-			);
-			name = View;
-			path = HHUtils/Classes/View;
 			sourceTree = "<group>";
 		};
 		817EC9A544744CA57F5209C6CAC92026 /* Pods-HHUtils_Example */ = {
@@ -206,21 +191,42 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		96AB47E89B730AE54DC20205AE5780D5 /* Extension */ = {
+		9807868BC44E53FF230AA0ED6FEA62D9 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				EB94B1AC4965DA3B9D61E41E00B375AC /* UIButton.swift */,
-				A02A245EB04D10F643ACF826E3823CA8 /* UIDeviceExtension.swift */,
-				024349BC868EDC040B50E978185361BE /* UIViewController.swift */,
+				F678CF70CA137F115A87D69C837EB618 /* String.swift */,
+				BB9DCD0E77FFF9BADE4AC2C73D2813B6 /* UIButton.swift */,
+				706E35551DA8EBC2E5FB36DAEBFE8CB3 /* UIDeviceExtension.swift */,
+				F7B83844E58E6DD1842CD2E5D72B1DAC /* UIResponder.swift */,
+				D21D5E69C59036743C1A18A2346E57D4 /* UIViewController.swift */,
 			);
 			name = Extension;
 			path = HHUtils/Classes/Extension;
 			sourceTree = "<group>";
 		};
+		B04A2FD1DBB7517AB872C32D18459E3A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				143F96022A44AB8805838D17273B8C21 /* HHButton.swift */,
+			);
+			name = View;
+			path = HHUtils/Classes/View;
+			sourceTree = "<group>";
+		};
+		BC30990033330DEFAF329B38016531AC /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				ACB9625ACB706EF4EFA05E212178505D /* HHUtils.podspec */,
+				E9456A71915ED20EE9D02C5771224658 /* LICENSE */,
+				D8A3E901A4CC0A6CF58440D6E991BFE9 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
 		C8C0BF477495699A2362ABDDE1E6EE3C /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				0BFF09AB95D297266D3746BBCCD4C3C5 /* HHUtils */,
+				427CD671D4E5E9229E8A305AD392C2DC /* HHUtils */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -264,19 +270,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		693797C9C1454795436C8483C3E3237A /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D2AEA773D430CE767A7F30A5B38178D1 /* HHUtils-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		C4EB062F1E45E082F0E45A7D8EA47493 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				8214849AF1C86AD8C0CB8DD78A674E17 /* Pods-HHUtils_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D625A05A6F2DE91602FE0C0A05A887F6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E53EFD915E515FA3C8779A402436D41 /* HHUtils-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,7 +301,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				36A8B4F938577C5D89032F72753602EB /* PBXTargetDependency */,
+				BDB22B77C6E8A75D96E93349C9630644 /* PBXTargetDependency */,
 			);
 			name = "Pods-HHUtils_Example";
 			productName = Pods_HHUtils_Example;
@@ -314,7 +320,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				ACF8A259AFB086DE82F9133EFFAF2EB9 /* PBXTargetDependency */,
+				9879690EFB865DFBF2FB8940535450F5 /* PBXTargetDependency */,
 			);
 			name = "Pods-HHUtils_Tests";
 			productName = Pods_HHUtils_Tests;
@@ -323,12 +329,12 @@
 		};
 		FFF4F7584BB23B458783EED401B641C0 /* HHUtils */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8FAD76F68ACA30052313F6DC8B88DD03 /* Build configuration list for PBXNativeTarget "HHUtils" */;
+			buildConfigurationList = 28AC14CD2DC84F82FA69058414FBA82C /* Build configuration list for PBXNativeTarget "HHUtils" */;
 			buildPhases = (
-				693797C9C1454795436C8483C3E3237A /* Headers */,
-				63F7FF90F8F845A5DDFA8B222CAF2EE1 /* Sources */,
-				E2236D3FC9E5C291DE0CE151EC22DA00 /* Frameworks */,
-				D0207695FE13E70E99E3FE9501483E3D /* Resources */,
+				D625A05A6F2DE91602FE0C0A05A887F6 /* Headers */,
+				51B9C2A4C7D3FD26A70B4AA5A9B97916 /* Sources */,
+				1D406561635889559F2771B25F3C4F8B /* Frameworks */,
+				297380B74C43A6D8B1DC5A2D46396C77 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -376,14 +382,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8D5707DECC669E20D711B1860AEAC8C8 /* Resources */ = {
+		297380B74C43A6D8B1DC5A2D46396C77 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0207695FE13E70E99E3FE9501483E3D /* Resources */ = {
+		8D5707DECC669E20D711B1860AEAC8C8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -401,16 +407,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63F7FF90F8F845A5DDFA8B222CAF2EE1 /* Sources */ = {
+		51B9C2A4C7D3FD26A70B4AA5A9B97916 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A10FCA55556287F3B374792BE7F0E11D /* Global.swift in Sources */,
-				F1A68EFF664BC771E01EBEAC648816DD /* HHButton.swift in Sources */,
-				6353D9B3129D72681FBFD52938223837 /* HHUtils-dummy.m in Sources */,
-				8B6F4DEC58D5FD10D5A3C6039D25573F /* UIButton.swift in Sources */,
-				D1470B770DFB3A8AFCD7F9D0496FD334 /* UIDeviceExtension.swift in Sources */,
-				286EE2D82292145D153CA53A36EEC0FC /* UIViewController.swift in Sources */,
+				290B2EB9A1A75EAF0A3B0D0D98AFCC42 /* Global.swift in Sources */,
+				C637F65AC4BA171ABDE791F2C25E410D /* HHButton.swift in Sources */,
+				A7BB4B751375A2A70FBF12DEC93D18E8 /* HHUtils-dummy.m in Sources */,
+				F19C78D6954D60D33005716B0DB5793F /* String.swift in Sources */,
+				60B99A101CCBF79ACA91349833DD331C /* UIButton.swift in Sources */,
+				8224D6A685665850ED6F37AA926064DB /* UIDeviceExtension.swift in Sources */,
+				5CFE361C12594B77D4F2A2BCD173309F /* UIResponder.swift in Sources */,
+				989A392153F2F7ABA0876390E118DC76 /* UIViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,84 +433,21 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		36A8B4F938577C5D89032F72753602EB /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = HHUtils;
-			target = FFF4F7584BB23B458783EED401B641C0 /* HHUtils */;
-			targetProxy = 046C7DC2D8D237CE873A14C74D7409CD /* PBXContainerItemProxy */;
-		};
-		ACF8A259AFB086DE82F9133EFFAF2EB9 /* PBXTargetDependency */ = {
+		9879690EFB865DFBF2FB8940535450F5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-HHUtils_Example";
 			target = 170B451243C84A523CCCDAB53744BC36 /* Pods-HHUtils_Example */;
-			targetProxy = CF6CAE385B49A2EF63648CEDF63C6094 /* PBXContainerItemProxy */;
+			targetProxy = 4D563F103E0369666121ED9AFDA7255F /* PBXContainerItemProxy */;
+		};
+		BDB22B77C6E8A75D96E93349C9630644 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HHUtils;
+			target = FFF4F7584BB23B458783EED401B641C0 /* HHUtils */;
+			targetProxy = 2F306FC0FBAA1EF6B4C5CDBC3F7BC966 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0739689DD84A6FC35930D349F7B3C283 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9B958164D396040A6A8F684BAE3F5C1C /* HHUtils.debug.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HHUtils/HHUtils-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HHUtils/HHUtils-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HHUtils/HHUtils.modulemap";
-				PRODUCT_MODULE_NAME = HHUtils;
-				PRODUCT_NAME = HHUtils;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		29803F983868A60E393D1471470E4E20 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = A6516E5A52257ADC5E59B89E8EF13E4F /* HHUtils.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/HHUtils/HHUtils-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/HHUtils/HHUtils-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/HHUtils/HHUtils.modulemap";
-				PRODUCT_MODULE_NAME = HHUtils;
-				PRODUCT_NAME = HHUtils;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		32F4A7D41089A74676F3B90F5102EC8F /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 1408E65F761996EA929DEEC3AE1566CB /* Pods-HHUtils_Example.release.xcconfig */;
@@ -637,6 +582,38 @@
 			};
 			name = Debug;
 		};
+		798D0644A9269BD35A9181F12E03130F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9DFC0041CB96FFA3419B2A447A80BA4 /* HHUtils.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HHUtils/HHUtils-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HHUtils/HHUtils-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HHUtils/HHUtils.modulemap";
+				PRODUCT_MODULE_NAME = HHUtils;
+				PRODUCT_NAME = HHUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -765,6 +742,37 @@
 			};
 			name = Debug;
 		};
+		D517927D8614F0A4B688ECE666641A8B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34F241597983489A7002FB87DCDA4DDA /* HHUtils.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HHUtils/HHUtils-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HHUtils/HHUtils-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/HHUtils/HHUtils.modulemap";
+				PRODUCT_MODULE_NAME = HHUtils;
+				PRODUCT_NAME = HHUtils;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -773,6 +781,15 @@
 			buildConfigurations = (
 				674DEF6CAD6D248611FF401708CB46CB /* Debug */,
 				4F0D0085D48086D354ADD643A92E23C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28AC14CD2DC84F82FA69058414FBA82C /* Build configuration list for PBXNativeTarget "HHUtils" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D517927D8614F0A4B688ECE666641A8B /* Debug */,
+				798D0644A9269BD35A9181F12E03130F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -791,15 +808,6 @@
 			buildConfigurations = (
 				4E06B6C72C2DC410D4C841BF786774AE /* Debug */,
 				32F4A7D41089A74676F3B90F5102EC8F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8FAD76F68ACA30052313F6DC8B88DD03 /* Build configuration list for PBXNativeTarget "HHUtils" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0739689DD84A6FC35930D349F7B3C283 /* Debug */,
-				29803F983868A60E393D1471470E4E20 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
