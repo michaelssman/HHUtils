@@ -12,12 +12,12 @@ private var keyboardHeightKey: Void?
 private var keyboardAnimationDurationKey: Void?
 
 extension UIViewController {
-    func showToast() {
+    public func showToast() {
         let alertVC = UIAlertController(title: "提示", message: "用户名或密码错误", preferredStyle: .alert)
         present(alertVC, animated: true, completion: nil)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.2) {
             alertVC.dismiss(animated: true) {
-//                self.navigationController?.pushViewController(HomeViewController(), animated: true)
+                //                self.navigationController?.pushViewController(HomeViewController(), animated: true)
             }
         }
     }
