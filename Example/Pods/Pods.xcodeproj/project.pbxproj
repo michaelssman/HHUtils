@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3745846A063FFD72FF9F2573DA5521CE /* Pods-HHUtils_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C954DEB60B4B58FA34168FEC5D261EF /* Pods-HHUtils_Tests-dummy.m */; };
 		3AC152324E311DB56A6840E33580A2AF /* HHUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AF05389DDFFCB63622815A5C01D0308 /* HHUtils-dummy.m */; };
+		4CCB2EB02B82F681007465E1 /* UIDeviceExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CCB2EAF2B82F681007465E1 /* UIDeviceExtension.swift */; };
 		5D6935E461B137A9062229D939BCC6E8 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E58FF325F03C750ADF7372347B85821 /* Global.swift */; };
 		8214849AF1C86AD8C0CB8DD78A674E17 /* Pods-HHUtils_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D97137AA53C075B2A6875B352DA1EEE /* Pods-HHUtils_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A0CDC34985B03415EA5BF747EF560E62 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
@@ -38,9 +39,9 @@
 
 /* Begin PBXFileReference section */
 		0E384E1CD123270992522967BBEFEC09 /* Pods-HHUtils_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HHUtils_Example-Info.plist"; sourceTree = "<group>"; };
-		0FFDFF9934B87B58E50D06771E2EF5D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		0FFDFF9934B87B58E50D06771E2EF5D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		1408E65F761996EA929DEEC3AE1566CB /* Pods-HHUtils_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHUtils_Example.release.xcconfig"; sourceTree = "<group>"; };
-		1632D43C0C7500A8C677CC5958D2BA2E /* HHUtils.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HHUtils.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1632D43C0C7500A8C677CC5958D2BA2E /* HHUtils.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = HHUtils.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1C9531A4E583940AC9B6C60B6945B42A /* Pods-HHUtils_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-HHUtils_Tests"; path = Pods_HHUtils_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EC98305F041BBF47C1E099B4B380248 /* Pods-HHUtils_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHUtils_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1F8B1A74DC273F16B522481242988416 /* Pods-HHUtils_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HHUtils_Tests-Info.plist"; sourceTree = "<group>"; };
@@ -49,6 +50,7 @@
 		2B962A364A58F778CB822EDA422707E7 /* Pods-HHUtils_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HHUtils_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		41859FD79A198ABAB000ACB3005D6B47 /* Pods-HHUtils_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HHUtils_Tests-umbrella.h"; sourceTree = "<group>"; };
 		441741CB7DB4D92CF81F3F124586849E /* HHUtils */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HHUtils; path = HHUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4CCB2EAF2B82F681007465E1 /* UIDeviceExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIDeviceExtension.swift; sourceTree = "<group>"; };
 		5481D752DD056551A7CF4BD80824EF64 /* HHUtils-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HHUtils-Info.plist"; sourceTree = "<group>"; };
 		5D97137AA53C075B2A6875B352DA1EEE /* Pods-HHUtils_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HHUtils_Example-umbrella.h"; sourceTree = "<group>"; };
 		5E58FF325F03C750ADF7372347B85821 /* Global.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Global.swift; path = HHUtils/Classes/Global.swift; sourceTree = "<group>"; };
@@ -58,9 +60,9 @@
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		7A7EBB652974F34F7170CB4A211D4A5A /* Pods-HHUtils_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HHUtils_Example.modulemap"; sourceTree = "<group>"; };
 		7C954DEB60B4B58FA34168FEC5D261EF /* Pods-HHUtils_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HHUtils_Tests-dummy.m"; sourceTree = "<group>"; };
-		85AE56A569FBA7FDEB26EAF9680A3924 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		85AE56A569FBA7FDEB26EAF9680A3924 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		947E6E1A0F0E3C113553D61AF2B1253D /* HHUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HHUtils.modulemap; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F26852643C120B6754DD3771C67D3DE /* Pods-HHUtils_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HHUtils_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A158860188D34EA583C0EEFCD7CCFAA3 /* Pods-HHUtils_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HHUtils_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		AE051C2874BB9A95B883192FB3625802 /* HHUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HHUtils.release.xcconfig; sourceTree = "<group>"; };
@@ -124,6 +126,15 @@
 			path = "Target Support Files/Pods-HHUtils_Tests";
 			sourceTree = "<group>";
 		};
+		4CCB2EAE2B82F681007465E1 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				4CCB2EAF2B82F681007465E1 /* UIDeviceExtension.swift */,
+			);
+			name = Extension;
+			path = HHUtils/Classes/Extension;
+			sourceTree = "<group>";
+		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				5E58FF325F03C750ADF7372347B85821 /* Global.swift */,
+				4CCB2EAE2B82F681007465E1 /* Extension */,
 				D43EBF42EB3EE855BE044D7934F2CE57 /* Pod */,
 				D6944B818CCD0EA0418CBB69962D80AE /* Support Files */,
 			);
@@ -383,6 +395,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CCB2EB02B82F681007465E1 /* UIDeviceExtension.swift in Sources */,
 				5D6935E461B137A9062229D939BCC6E8 /* Global.swift in Sources */,
 				3AC152324E311DB56A6840E33580A2AF /* HHUtils-dummy.m in Sources */,
 			);
@@ -627,8 +640,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
