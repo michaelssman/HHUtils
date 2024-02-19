@@ -12,7 +12,7 @@ public class HHButton: UIButton {
     @objc public var titleRect: CGRect = CGRect.zero
     @objc public var imageRect: CGRect = CGRect.zero
     /// 文字宽度
-    @objc var titleWidth: CGFloat = 0.0
+    @objc public var titleWidth: CGFloat = 0.0
     @objc var space: CGFloat = 0.0
     
     public override func titleRect(forContentRect contentRect: CGRect) -> CGRect {
