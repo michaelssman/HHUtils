@@ -1,5 +1,5 @@
 PODS:
-  - HHUtils (0.3.2)
+  - HHUtils (0.3.3)
 
 DEPENDENCIES:
   - HHUtils (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HHUtils: db095e7db04b41aadf42da7435be53ff69122e55
+  HHUtils: bd46d2c8c783386c757793dc8e86b15b9cb80152
 
 PODFILE CHECKSUM: c26bbf18cd2b17dbc754e3c0c82c7523564803ca
 

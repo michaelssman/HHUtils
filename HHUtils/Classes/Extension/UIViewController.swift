@@ -68,7 +68,7 @@ extension UIViewController {
         }
     }
     //添加观察者  在viewDidLoad中调用
-    @objc func addResizeForKeyboardObserver() {
+    @objc public func addResizeForKeyboardObserver() {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
     }
