@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     static let designKit = DesignKitPalette.self
     enum DesignKitPalette {
         public static let primary: UIColor = dynamicColor(light: UIColor(hex: 0x01C257), dark: UIColor(hex: 0x01C257))
@@ -20,7 +20,7 @@ extension UIColor {
         public static let secondaryText: UIColor = dynamicColor(light: UIColor(hex: 0x68697f), dark: UIColor(hex: 0x8E8E93))
         public static let tertiaryText: UIColor = dynamicColor(light: UIColor(hex: 0x8f90a0), dark: UIColor(hex: 0x8E8E93))
         public static let quaternaryText: UIColor = dynamicColor(light: UIColor(hex: 0xb2b2bf), dark: UIColor(hex: 0x8E8E93))
-
+        
         static private func dynamicColor(light: UIColor, dark: UIColor) -> UIColor {
             if #available(iOS 13.0, *) {
                 return UIColor { $0.userInterfaceStyle == .dark ? dark : light }
@@ -48,7 +48,7 @@ extension UIColor {
     convenience init(_ hexValue: Int) {
         self.init(hexValue, alphaValue: 1)
     }
-
+    
     //深色模式
     static func dynamicColor(light: UIColor, dark: UIColor) -> UIColor {
         if #available(iOS 13.0, *) {
@@ -80,8 +80,8 @@ extension UIColor {
         
         return (red, green, blue, alpha)
     }
-
-
+    
+    
     @objc func toImage() -> UIImage {
         let rect = CGRect(x: 0, y: 0, width: 1, height: 1)
         UIGraphicsBeginImageContext(rect.size)
