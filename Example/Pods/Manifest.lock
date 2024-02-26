@@ -1,15 +1,36 @@
 PODS:
-  - HHUtils (0.3.9)
+  - Alamofire (5.0.5)
+  - HHUtils (0.4.0):
+    - Alamofire (~> 5.0.0)
+    - RxCocoa (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxCocoa (6.5.0):
+    - RxRelay (= 6.5.0)
+    - RxSwift (= 6.5.0)
+  - RxRelay (6.5.0):
+    - RxSwift (= 6.5.0)
+  - RxSwift (6.5.0)
 
 DEPENDENCIES:
   - HHUtils (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - RxCocoa
+    - RxRelay
+    - RxSwift
 
 EXTERNAL SOURCES:
   HHUtils:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HHUtils: e776c68bc616d616815083103f460933201de5c4
+  Alamofire: df2f8f826963b08b9a870791ad48e07a10090b2e
+  HHUtils: d640689ea739e5912b6ad9e5adca66c891a28ab8
+  RxCocoa: 94f817b71c07517321eb4f9ad299112ca8af743b
+  RxRelay: 1de1523e604c72b6c68feadedd1af3b1b4d0ecbd
+  RxSwift: 5710a9e6b17f3c3d6e40d6e559b9fa1e813b2ef8
 
 PODFILE CHECKSUM: c26bbf18cd2b17dbc754e3c0c82c7523564803ca
 
