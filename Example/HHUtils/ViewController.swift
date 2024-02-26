@@ -7,18 +7,23 @@
 //
 
 import UIKit
+import HHUtils
 
 class ViewController: UIViewController {
-
+    lazy var webView: HHWebView = {
+        let webView = HHWebView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: 800))
+        return webView
+    }()
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        view.addSubview(webView)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
 }
 
