@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HHUtils'
-  s.version          = '0.4.1'
+  s.version          = '0.4.2'
   s.summary          = 'A short description of HHUtils.'
 
 # This description is used to generate tags and improve search results.
@@ -40,5 +40,6 @@ Pod::Spec.new do |s|
   s.dependency 'Alamofire', '~> 5.0'
   s.dependency 'RxSwift', '6.5.0'
   s.dependency 'RxCocoa', '6.5.0'
+  s.dependency 'MBProgressHUD', '1.2.0'
 
 end

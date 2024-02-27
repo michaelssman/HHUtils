@@ -18,6 +18,10 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         view.addSubview(webView)
+        
+        // MARK: 网络请求
+        let mvm = HHMomentsDetailsVM()
+        mvm.request1()
     }
     
     override func didReceiveMemoryWarning() {
