@@ -20,8 +20,9 @@ class ViewController: UIViewController {
         view.addSubview(webView)
         
         // MARK: 网络请求
-        let mvm = HHMomentsDetailsVM()
-        mvm.request1()
+        let _ = UserDefinedAppReminderSession().get(API.baseURL_0, path: "").subscribe { r in
+            //
+        }
     }
     
     override func didReceiveMemoryWarning() {

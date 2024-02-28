@@ -1,5 +1,5 @@
 //
-//  HHMomentsDetailsVM.swift
+//  UserDefinedAppReminderSession.swift
 //  HHObjectiveCDemo
 //
 //  Created by Michael on 2023/6/19.
@@ -50,24 +50,23 @@ struct MomentsDetails: Codable {
         // swiftlint:enable no_hardcoded_strings
     }
 }
-struct Response: Codable {
+struct UserDefinedAppReminder: Codable {
     let data: Data
     
     struct Data: Codable {
         let getMomentsDetailsByUserID: MomentsDetails
     }
 }
-
-struct Session1: APISession {
-    typealias ReponseType = Response
+// MARK: 网络请求
+struct UserDefinedAppReminderSession: APISession {
+    typealias ReponseType = UserDefinedAppReminder
     
     let disposeBag = DisposeBag()
-    
     init() {
         let ss = self.post(API.baseURL_1, path: "api/Tools/UserDefinedAppReminder", headers: [], parameters: [
             "sss" : "",
             "ddd" : "",
-        ]).subscribe { r in
+        ]).subscribe { response in
             //逻辑处理
         } onError: { error in
             switch error {
@@ -93,16 +92,9 @@ struct Session1: APISession {
             //
         }
         // 将订阅添加到disposeBag中，以便于管理
-        ss.disposed(by: self.disposeBag)
+        ss.disposed(by: disposeBag)
         //        // 将触发Disposables.create中的request.cancel()
         //        ss.dispose()
     }
     
-}
-
-class HHMomentsDetailsVM: NSObject {
-    var session1: Session1?
-    func request1() {
-        session1 = Session1()
-    }
 }
