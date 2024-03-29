@@ -17,12 +17,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        view.addSubview(webView)
+//        view.addSubview(webView)
         
         // MARK: 网络请求
         let _ = UserDefinedAppReminderSession().get(API.baseURL_0, path: "").subscribe { r in
             //
         }
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        navigationController?.pushViewController(CommonListViewController(), animated: true)
     }
     
     override func didReceiveMemoryWarning() {

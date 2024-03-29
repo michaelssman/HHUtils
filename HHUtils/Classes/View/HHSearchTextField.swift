@@ -55,7 +55,7 @@ public class HHSearchTextField: UITextField {
     }()
     
     // 初始化函数
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         setUpViews()
     }
