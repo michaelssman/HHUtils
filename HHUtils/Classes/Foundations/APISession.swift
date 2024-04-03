@@ -10,7 +10,7 @@ import Alamofire
 import RxSwift
 
 public enum API {
-    static public let baseURL_0 = URL(string: "https://www.nmy.com/hh")!
+    static public let baseURL_0 = URL(string: debug() ? "https://www.nmy.com/hh" : "https://www.nmy.com/hhss")!
     static public let baseURL_1 = URL(string: "https://api1.example.com")!
     static public let baseURL_2 = URL(string: "https://api2.example.com")!
 }
@@ -186,7 +186,7 @@ func queryString(from dictionary: [String: Any]) -> String {
     var components: [String] = []
     for key in dictionary.keys.sorted() {
         if let value = dictionary[key] {
-            /// 对键和值进行URL编码
+            // MARK: 对键和值进行URL编码
             /// 因为URL中的某些字符（如空格、特殊符号等）需要被转换为百分比编码（例如，空格被编码为%20），以确保它们在HTTP请求中传输时不会引起问题。
             let encodedKey = key.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
             let encodedValue = "\(value)".addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) ?? ""
@@ -210,7 +210,6 @@ func testQueryString() {
     let queryString = queryString(from: params)
     print(queryString) // 输出: age=25&city=New%20York&name=John%20Appleseed
 }
-
 
 func createURL(with baseURL: String, path: String, parameters: [String: String]?) -> URL? {
     // 尝试构建URLComponents对象

@@ -13,6 +13,15 @@ import UIKit
 public let SCREEN_WIDTH = UIScreen.main.bounds.width
 public let SCREEN_HEIGHT = UIScreen.main.bounds.height
 
+// MARK: 正式测试库
+@inline(__always)
+public func debug() -> Bool {
+#if DEBUG
+    return true
+#else
+    return false
+#endif
+}
 
 // MARK: keyWindow
 @inline(__always)
