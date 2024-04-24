@@ -48,7 +48,7 @@ public extension UIView {
         layer.mask = shapeLayer
     }
     
-    // 将视图转换成图片
+    // 将view转换成UIImage
     func image() -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(bounds.size, false, UIScreen.main.scale)
         // UIGraphicsBeginImageContext(bounds.size)

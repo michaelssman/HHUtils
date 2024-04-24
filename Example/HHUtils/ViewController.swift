@@ -17,10 +17,10 @@ class ViewController: UIViewController, UITableViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-//        view.addSubview(webView)
+        //        view.addSubview(webView)
         
         let searchTFHeight: CGFloat = 36
-        let searchTF: HHSearchTextField = HHSearchTextField(frame: CGRect(x: 16, y: UIDevice.vg_navigationFullHeight() - searchTFHeight - 8, width: SCREEN_WIDTH - 16 - 55, height: searchTFHeight))
+        let searchTF: HHSearchTextField = HHSearchTextField(frame: CGRect(x: 16, y: vg_navigationFullHeight() - searchTFHeight - 8, width: SCREEN_WIDTH - 16 - 55, height: searchTFHeight))
         searchTF.cornerBackgroundColor = UIColor(hex: 0xF7F8FA)
         searchTF.cornerRadius = 18
         view.addSubview(searchTF)
@@ -33,10 +33,14 @@ class ViewController: UIViewController, UITableViewDelegate {
         
         
         //CommonList两个泛型 Product和ProductCell
-        let productList = CommonList<Product, ProductCell>(frame: CGRect(x: 0, y: UIDevice.vg_navigationFullHeight(), width: SCREEN_WIDTH, height: SCREEN_HEIGHT - UIDevice.vg_navigationFullHeight()))
+        let productList = CommonList<Product, ProductCell>(frame: CGRect(x: 0, y: vg_navigationFullHeight(), width: SCREEN_WIDTH, height: SCREEN_HEIGHT - vg_navigationFullHeight()))
         productList.items = FakeData.createProducts()
         productList.tableView.delegate = self
         view.addSubview(productList)
+        
+        let fv: HHFloatingView = HHFloatingView(frame: CGRect(x: SCREEN_WIDTH - 80, y: SCREEN_HEIGHT - 150, width: 80, height: 80))
+        fv.backgroundColor = .red
+        view.addSubview(fv)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -45,12 +49,17 @@ class ViewController: UIViewController, UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 120
+        return 68
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
             // MARK: 网络请求
             let _ = UserDefinedAppReminderSession().get(API.baseURL_0, path: "").subscribe { r in
+                //
+            }
+        }
+        else if indexPath.row == 1 {
+            let alertView: AlertView = AlertView.showAlertView(title: "温馨提示", contentText: "确定要删除吗？") { clickOK in
                 //
             }
         }
