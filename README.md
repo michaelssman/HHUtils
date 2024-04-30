@@ -33,6 +33,7 @@ HHUtils is available under the MIT license. See the LICENSE file for more info.
 - 获取keyWindow
 #### Foundations
 - APISession：网络请求
+- HHDecimalNumber：四舍五入，保留小数位
 #### Extension
 - MBProgressHUD
 - String

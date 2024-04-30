@@ -59,7 +59,7 @@ class ViewController: UIViewController, UITableViewDelegate {
             }
         }
         else if indexPath.row == 1 {
-            let alertView: AlertView = AlertView.showAlertView(title: "温馨提示", contentText: "确定要删除吗？") { clickOK in
+            let _: AlertView = AlertView.showAlertView(title: "温馨提示", contentText: "确定要删除吗？") { clickOK in
                 //
             }
         }
