@@ -132,6 +132,7 @@
 		4B71B824671B6917E7E83C1E48EB40F4 /* ConstraintItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A45607BCB805A449DE37893BFD3ED4A /* ConstraintItem.swift */; };
 		4C4FF7AC2BE86513DFE73050739F013A /* ConstraintDirectionalInsets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561B86219398520B80BC3BEDF436D472 /* ConstraintDirectionalInsets.swift */; };
 		4CAFD76E2BDF80EF00A1AC86 /* HHDecimalNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CAFD76D2BDF80EF00A1AC86 /* HHDecimalNumber.swift */; };
+		4CC0BE7D2BEB2145002BD6C5 /* UITableViewHeightCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC0BE7C2BEB2145002BD6C5 /* UITableViewHeightCache.swift */; };
 		4CD620C0686BBC65FEC09476111AB35B /* Producer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF09A371A2E4A5576D6E227E46011419 /* Producer.swift */; };
 		4D8F7508480B25D25144B0B9479F5FD7 /* DisposeBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24987C62D090AFCDAC46C2F10AE380CE /* DisposeBase.swift */; };
 		4D94F323740E0254AF6A20E2AA70CEFC /* AddRef.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F6C7652B6C48DC00FB74330909D0BC4 /* AddRef.swift */; };
@@ -649,6 +650,7 @@
 		4B6A71A89DADECF2405E1CDDA4982B5B /* Optional.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Optional.swift; path = RxSwift/Observables/Optional.swift; sourceTree = "<group>"; };
 		4CA399FD969C188113ACB6170326CA91 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
 		4CAFD76D2BDF80EF00A1AC86 /* HHDecimalNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HHDecimalNumber.swift; sourceTree = "<group>"; };
+		4CC0BE7C2BEB2145002BD6C5 /* UITableViewHeightCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewHeightCache.swift; sourceTree = "<group>"; };
 		4D5953E35AE9F96B9924E525CB65F754 /* SkipWhile.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkipWhile.swift; path = RxSwift/Observables/SkipWhile.swift; sourceTree = "<group>"; };
 		4DF950C7A1EDF0917B4A377E257D50B9 /* ConnectableObservableType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConnectableObservableType.swift; path = RxSwift/ConnectableObservableType.swift; sourceTree = "<group>"; };
 		4E8BF249B1DEF8B5B25E6F040E44FE7F /* Repeat.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Repeat.swift; path = RxSwift/Observables/Repeat.swift; sourceTree = "<group>"; };
@@ -1419,6 +1421,7 @@
 				B5637AB0958B28F6C61DDE502383DBC9 /* UIColor.swift */,
 				0C8C66B61C7D9D6DD71B38AF389C3A38 /* UILabel.swift */,
 				BD8F18D975B546A459B59BF759B044A6 /* UIResponder.swift */,
+				4CC0BE7C2BEB2145002BD6C5 /* UITableViewHeightCache.swift */,
 				0D6E1BD5CF6C3C1796C0E6464758FA98 /* UITextView.swift */,
 				629E991BF56E77B85B280B05559BE255 /* UIView.swift */,
 				2596929B0449971227FD1AB4ECF1DA49 /* UIViewController.swift */,
@@ -2499,6 +2502,7 @@
 				A32F30DF9540BB8549367EED3210249C /* AlertView.swift in Sources */,
 				5770669F6E0C8886B8CDA57EF9B8CF31 /* APISession.swift in Sources */,
 				F74126EFB2024E133B7CC47FBE00BFC7 /* CommonList.swift in Sources */,
+				4CC0BE7D2BEB2145002BD6C5 /* UITableViewHeightCache.swift in Sources */,
 				29CB8558BAD790942625F02A12C9C47E /* Global.swift in Sources */,
 				4CAFD76E2BDF80EF00A1AC86 /* HHDecimalNumber.swift in Sources */,
 				BC071FF290AAAF4E689DB363A4C03D76 /* HHButton.swift in Sources */,

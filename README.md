@@ -48,6 +48,7 @@ HHUtils is available under the MIT license. See the LICENSE file for more info.
     - 特殊字符设置特殊样式
     - 添加附件
 - UIResponder：获取第一响应者
+- UITableViewHeightCache：tableView优化之---高度缓存
 - UITextView：设置光标
 - UIView
     - 查找viewController
