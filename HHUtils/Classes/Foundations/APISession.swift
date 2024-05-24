@@ -14,6 +14,10 @@ public enum API {
     static public let baseURL_1 = URL(string: "https://api1.example.com")!
     static public let baseURL_2 = URL(string: "https://api2.example.com")!
 }
+enum APIString {
+    static let AuthorizedUpgrade: String = debug() ? "https://jxcproapitest.ningmengyun.com" : ""
+    static let ScanResult: String = debug() ? "https://jproapitest.ningmengyun.com" : ""
+}
 
 public enum APISessionError: Error {
     case networkError(error: Error, statusCode: Int)
@@ -23,8 +27,8 @@ public enum APISessionError: Error {
 
 public protocol APISession {
     associatedtype ReponseType: Codable
-    func get(_ baseUrl: URL, path: String, headers: HTTPHeaders, parameters: Parameters?) -> Observable<ReponseType>
-    func post(_ baseUrl: URL, path: String, headers: HTTPHeaders, parameters: Parameters?) -> Observable<ReponseType>
+    func get(_ baseUrl: URL, path: String?, headers: HTTPHeaders, parameters: Parameters?) -> Observable<ReponseType>
+    func post(_ baseUrl: URL, path: String?, headers: HTTPHeaders, parameters: Parameters?) -> Observable<ReponseType>
     func uploadImage(_ baseUrl: URL, path: String, image: UIImage, headers: HTTPHeaders) -> Observable<ReponseType>
     func request()
 }
@@ -47,15 +51,15 @@ public extension APISession {
     //        return API.baseURL
     //    }
     
-    func get(_ baseUrl: URL, path: String, headers: HTTPHeaders = [:], parameters: Parameters? = nil) -> Observable<ReponseType> {
+    func get(_ baseUrl: URL, path: String? = nil, headers: HTTPHeaders = [:], parameters: Parameters? = nil) -> Observable<ReponseType> {
         return request(baseUrl, path: path, method: .get, headers: headers, parameters: parameters, encoding: JSONEncoding.default)
     }
     
-    func post(_ baseUrl: URL, path: String, headers: HTTPHeaders = [:], parameters: Parameters? = nil) -> Observable<ReponseType> {
+    func post(_ baseUrl: URL, path: String? = nil, headers: HTTPHeaders = [:], parameters: Parameters? = nil) -> Observable<ReponseType> {
         return request(baseUrl, path: path, method: .post, headers: headers, parameters: parameters, encoding: JSONEncoding.default)
     }
     
-    func delete(_ baseUrl: URL, path: String, headers: HTTPHeaders = [:], parameters: Parameters? = nil) -> Observable<ReponseType> {
+    func delete(_ baseUrl: URL, path: String? = nil, headers: HTTPHeaders = [:], parameters: Parameters? = nil) -> Observable<ReponseType> {
         return request(baseUrl, path: path, method: .delete, headers: headers, parameters: parameters, encoding: JSONEncoding.default)
     }
     
@@ -73,8 +77,11 @@ public extension APISession {
 }
 
 private extension APISession {
-    func request(_ baseUrl: URL, path: String, method: HTTPMethod, headers: HTTPHeaders, parameters: Parameters?, encoding: ParameterEncoding) -> Observable<ReponseType> {
-        let url = path.count > 0 ? baseUrl.appendingPathComponent(path) : baseUrl
+    func request(_ baseUrl: URL, path: String?, method: HTTPMethod, headers: HTTPHeaders, parameters: Parameters?, encoding: ParameterEncoding) -> Observable<ReponseType> {
+        var url = baseUrl
+        if let path = path, path.count > 0 {
+            url = baseUrl.appendingPathComponent(path)
+        }
         let allHeaders = HTTPHeaders(defaultHeaders.dictionary.merging(headers.dictionary) { $1 })
         
         return Observable.create { observer -> Disposable in
@@ -250,7 +257,7 @@ func makePOSTRequest() {
     }
     
     // Create the request object
-    var request = URLRequest(url: url)
+    var request = URLRequest(url: url, timeoutInterval: Double.infinity)
     request.httpMethod = "POST"
     // Set the request headers
     request.setValue("application/json", forHTTPHeaderField: "Content-Type")
