@@ -56,6 +56,7 @@ HHUtils is available under the MIT license. See the LICENSE file for more info.
     - 设置圆角
     - view转图片
     - 自动回收键盘
+    - 屏幕截图（UIGraphics）
 - UIViewController
     - 回收键盘
     - 防止键盘遮挡输入框

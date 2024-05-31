@@ -59,6 +59,24 @@ public extension UIView {
         UIGraphicsEndImageContext()
         return tImage
     }
+    
+    /// 截图
+    /// - Parameters:
+    ///   - view: 需要截图的整个view
+    ///   - sender: 需要排除的view
+    func saveButtonTapped(view: UIView, senders: [UIView]) -> UIImage? {
+        // 隐藏所有按钮
+        senders.forEach { $0.isHidden = true }
+        // 截图整个屏幕
+        UIGraphicsBeginImageContextWithOptions(view.bounds.size, false, UIScreen.main.scale)
+        view.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
+        let screenshot = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        // 显示所有按钮
+        senders.forEach { $0.isHidden = false }
+        return screenshot
+    }
+    
 }
 
 public class DismissKeyboardView: UIView {

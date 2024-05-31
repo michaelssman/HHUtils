@@ -63,6 +63,10 @@ class ViewController: UIViewController, UITableViewDelegate {
                 //
             }
         }
+        else if indexPath.row == 3 {
+            let result = decimalDigitsFormatter("1000.12345600", decimalDigits: 3)
+            print("保留小数位：\(result)")
+        }
     }
     
     override func didReceiveMemoryWarning() {

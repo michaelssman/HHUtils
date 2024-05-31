@@ -249,9 +249,9 @@ func createUrlTest() {
 }
 
 // MARK: URLSession
-func makePOSTRequest() {
+func sendPostRequest(urlString: String, requestBody: String, completion: @escaping (Result<[String: Any], Error>) -> Void) {
     // Create the URL
-    guard let url = URL(string: "https://api.example.com/endpoint") else {
+    guard let url = URL(string: urlString) else {
         print("Invalid URL")
         return
     }
@@ -262,8 +262,7 @@ func makePOSTRequest() {
     // Set the request headers
     request.setValue("application/json", forHTTPHeaderField: "Content-Type")
     // Set the request body
-    let requestBodyString = "This is the request body string."
-    request.httpBody = requestBodyString.data(using: .utf8)
+    request.httpBody = requestBody.data(using: .utf8)
     
     // Create the URLSession configuration
     let sessionConfig = URLSessionConfiguration.default
@@ -276,6 +275,7 @@ func makePOSTRequest() {
         // Handle the response
         if let error = error {
             print("Error: \(error.localizedDescription)")
+            completion(.failure(error))
             return
         }
         
@@ -289,9 +289,11 @@ func makePOSTRequest() {
                     // Parse the response data into a dictionary
                     if let responseDictionary = try JSONSerialization.jsonObject(with: responseData, options: []) as? [String: Any] {
                         print("Response: \(responseDictionary)")
+                        completion(.success(responseDictionary))
                     }
                 } catch {
                     print("Error parsing JSON: \(error)")
+                    completion(.failure(error))
                 }
             }
         }
@@ -299,4 +301,15 @@ func makePOSTRequest() {
     
     // Start the task
     task.resume()
+}
+
+func testSendPostRequest() {
+    sendPostRequest(urlString: "", requestBody: "") { result in
+        switch result {
+        case .success(let responseDict):
+            print("Success: \(responseDict)")
+        case .failure(let error):
+            print("Failure: \(error.localizedDescription)")
+        }
+    }
 }

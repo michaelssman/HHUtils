@@ -262,11 +262,16 @@ extension UITableView {
         }
         var height: CGFloat = 0
         if width > 0 {
+            // 创建一个宽度约束，用于计算内容视图的自适应大小
             let widthFenceConstraint = NSLayoutConstraint(item: cell.contentView, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1.0, constant: width)
+            // 添加宽度约束到内容视图
             cell.contentView.addConstraint(widthFenceConstraint)
+            // 计算内容视图的自适应大小，并获取高度
             height = cell.contentView.systemLayoutSizeFitting(UIView.layoutFittingCompressedSize).height
+            // 移除宽度约束
             cell.contentView.removeConstraint(widthFenceConstraint)
         }
+        // 如果高度仍然为0，则使用sizeThatFits方法计算高度
         if height == 0 {
             height = cell.sizeThatFits(CGSize(width: width, height: 0)).height
         }
