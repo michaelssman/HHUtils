@@ -90,24 +90,24 @@ public func keyWindow() -> UIWindow {
 
 @inline(__always)
 private func getKeyWindow() -> UIWindow {
-    var result: UIWindow?
     if #available(iOS 13.0, *) {
         let scenes = UIApplication.shared.connectedScenes
         for scene in scenes {
             if scene.activationState == .foregroundActive, let windowScene = scene as? UIWindowScene {
                 for window in windowScene.windows {
                     if window.isKeyWindow {
-                        result = window
-                        break
+                        return window
                     }
-                }
-                if result != nil {
-                    break
                 }
             }
         }
     } else {
-        result = UIApplication.shared.keyWindow
+        if let keyWindow = UIApplication.shared.keyWindow {
+            return keyWindow
+        }
     }
-    return result!
+    
+    // 如果没有找到 keyWindow，创建并返回一个新的 UIWindow 实例
+    let newWindow = UIWindow(frame: UIScreen.main.bounds)
+    return newWindow
 }

@@ -23,20 +23,19 @@ public extension UIView {
     /// 设置阴影
     /// - Parameters:
     ///   - radius: 设置阴影的模糊程度
-    ///   - shadow: 是否应该添加阴影
     ///   - color: 设置阴影的颜色
     ///   - opacity: 设置阴影的不透明度（0.0表示完全透明，1.0表示完全不透明）
-    func setUpShadow(radius: CGFloat, shadow: Bool, color: UIColor, opacity: Float) {
+    ///   - width: OffsetX
+    ///   - height: OffsetY
+    func setUpShadow(radius: CGFloat, color: UIColor, opacity: Float, width: CGFloat, height: CGFloat) {
         layer.cornerRadius = radius
-        if shadow {
-            layer.shadowColor = color.cgColor
-            // 设置阴影的偏移量（width和height表示水平和垂直方向上的偏移量）
-            layer.shadowOffset = CGSize(width: 2, height: 2)
-            layer.shadowOpacity = opacity
-            layer.shadowRadius = radius
-            layer.shouldRasterize = false
-            layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: radius).cgPath
-        }
+        layer.shadowColor = color.cgColor
+        // 设置阴影的偏移量（width和height表示水平和垂直方向上的偏移量）
+        layer.shadowOffset = CGSize(width: width, height: height)
+        layer.shadowOpacity = opacity
+        layer.shadowRadius = radius
+        layer.shouldRasterize = false
+        layer.shadowPath = UIBezierPath(roundedRect: bounds, cornerRadius: radius).cgPath
         layer.masksToBounds = true
     }
     // MARK: 4个圆角
@@ -49,12 +48,9 @@ public extension UIView {
     }
     
     // 将view转换成UIImage
-    func image() -> UIImage? {
+    func toImage() -> UIImage? {
         UIGraphicsBeginImageContextWithOptions(bounds.size, false, UIScreen.main.scale)
-        // UIGraphicsBeginImageContext(bounds.size)
-        
         layer.render(in: UIGraphicsGetCurrentContext()!)
-        
         let tImage = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return tImage

@@ -34,6 +34,10 @@ HHUtils is available under the MIT license. See the LICENSE file for more info.
 #### Foundations
 - APISession：网络请求
 - HHDecimalNumber：四舍五入，保留小数位
+- RegularExpression：正则
+    - 运算式表达式
+- UIImageUtils
+    - 两张图合成一张图
 #### Extension
 - MBProgressHUD
 - String
@@ -52,10 +56,10 @@ HHUtils is available under the MIT license. See the LICENSE file for more info.
 - UITextView：设置光标
 - UIView
     - 查找viewController
+    - 自动回收键盘
     - 设置阴影
     - 设置圆角
     - view转图片
-    - 自动回收键盘
     - 屏幕截图（UIGraphics）
 - UIViewController
     - 回收键盘
